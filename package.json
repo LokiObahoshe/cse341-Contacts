@@ -1,7 +1,7 @@
 {
   "name": "cse341-node",
   "version": "1.0.0",
-  "description": "",
+  "description": "��#\u0000 \u0000c\u0000s\u0000e\u00003\u00004\u00001\u0000-\u0000C\u0000o\u0000n\u0000t\u0000a\u0000c\u0000t\u0000s\u0000",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/LokiObahoshe/cse341-node#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongodb": "^6.19.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
