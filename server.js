@@ -4,7 +4,7 @@ const mongodb = require('./data/database');
 
 const port = process.env.PORT || 3000;
 
-app.use('/', require('./routes'));
+app.use('/contacts', require('./routes/contacts'));
 
 mongodb.initDb((err) => {
     if (err) {
