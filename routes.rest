@@ -1,0 +1,50 @@
+### Get all
+GET http://localhost:3000/contacts
+
+### Get contact by id (Willaim)
+GET http://localhost:3000/contacts/68bb6c9283340e18d6cc6104
+
+### Get contact by id (Elizabeth)
+GET http://localhost:3000/contacts/68bb6d406a50d765def37bd1
+
+### Get contact by id (Evan)
+GET http://localhost:3000/contacts/68bb6d5c6a50d765def37bd2
+
+### Create contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mrs",
+    "lastName": "Afton",
+    "email": "iLoveMykIdS1234@aol.com",
+    "favoriteColor": "Periwinkle",
+    "birthday": "03/16/1980"
+}
+
+### Update/Replace Contact info (William = Dave)
+PUT http://localhost:3000/contacts/68bb6c9283340e18d6cc6104 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Dave",
+    "lastName": "Miller",
+    "email": "ilikefAkeNamEs@aol.com",
+    "favoriteColor": "Red",
+    "birthday": "06/25/1983"
+}
+
+### Update/Replace Contact info (Dave = William)
+PUT http://localhost:3000/contacts/68bb6c9283340e18d6cc6104 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "William",
+    "lastName": "Afton",
+    "email": "ilikefAkepiZZa@aol.com",
+    "favoriteColor": "Purple",
+    "birthday": "06/25/1983"
+}
+
+### Delete contact by id
+DELETE http://localhost:3000/contacts/68c32cc74059f2fea926951c HTTP/1.1
